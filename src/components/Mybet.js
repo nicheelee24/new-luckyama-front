@@ -22,8 +22,8 @@ export const MyBet = () => {
     const fetchMyBets = async () => {
         try {
             setLoading(true);
-           // const token = window.localStorage.getItem("token");
-const token='';
+           const token = window.localStorage.getItem("token");
+
             const options = {
                 method: "GET",
                 url: process.env.REACT_APP_BACKEND + "/api/bet/mybets",
